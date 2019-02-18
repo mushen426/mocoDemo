@@ -1,0 +1,54 @@
+[
+
+	{
+		"description":"get 不带参数",
+		"request":{
+			"uri":"/get2",
+			"method":"get"
+		},
+		"response":{
+			"text":"不带参数的get",
+			"headers":{
+				"Content-Type":"charset=utf-8"
+			}
+		}
+				
+	
+	},
+	{
+		"description":"get 待参数的请求",
+		"request":{
+			"uri":"/get1",
+			"method":"get",
+			"queries":{
+				"name":"linmushen",
+				"age":"28"
+			}
+		},
+		"response":{
+			"text":"带参数的get请求",
+			"headers":{
+				"Content-Type":"charset=utf-8"
+			}
+		}
+	},
+	
+	 {
+		"description":"get 待参数的请求",
+		"request":{
+			"uri":"/cookies",
+			"method":"get",
+			"cookies":{
+				"login":"true"
+			}
+		},
+		"response":{
+			"text":"这是一个携带cookies信息才能访问的地址",
+			"headers":{
+				"Content-Type":"charset=gbk"
+			}
+		}
+	}
+]
+
+

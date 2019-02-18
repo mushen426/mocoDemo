@@ -1,0 +1,92 @@
+[
+	{
+		"description":"post无参请求",
+		"request":{
+			"uri":"/post1",
+			"method":"post"
+		},
+		"response":{
+			"text":"这是无参的post 响应结果",
+			"headers":{
+				"Content-Type":"charset=gbk"
+			}
+		}
+	},
+	{
+		"description":"待参数的post",
+		"request":{
+			"uri":"/post2",
+			"method":"post",
+			"forms":{
+				"name":"linmushen",
+				"age":"28"
+			}
+		},
+		"response":{
+			"text":"待参数的post请求",
+			"headers":{
+				"Content-Type":"charset=gbk"
+			}
+		}
+		
+	},
+	
+	 {
+		"description":"post 待参数的请求",
+		"request":{
+			"uri":"/cookies1",
+			"method":"post",
+			"cookies":{
+				"login":"true"
+			},
+			"json":{
+				"name":"linmushen",
+				"age":"28"
+			}
+		},
+		"response":{
+			"status":200,
+			"headers":{
+				"Content-Type":"charset=gbk"
+			},
+			"json":{
+				"linmushen":"success",
+				"status":1
+			}
+		}
+	},
+	
+	 {
+		"description":"headers添加头部信息",
+		"request":{
+			"uri":"/headers",
+			"method":"post",
+			"cookies":{
+				"login":"true"
+			},
+			"json":{
+				"name":"linmushen",
+				"age":"28"
+			},
+			"headers":{
+				"Content-Type":"application/json"
+			}
+		},
+		"response":{
+			"status":200,
+			"headers":{
+				"Content-Type":"charset=gbk"
+			},
+			"json":{
+				"linmushen":"success",
+				"status":1
+			}
+		}
+	},
+	{
+		
+	}
+	
+	
+
+]
